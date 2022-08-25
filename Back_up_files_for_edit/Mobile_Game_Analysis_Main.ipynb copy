@@ -9,12 +9,12 @@
     "\n",
     "## Table of Contents\n",
     "\n",
-    "1. **Project Background**\n",
-    "2. **About the Data**\n",
-    "3. **Analyzing Player Behavior**\n",
-    "4. **Comparing 1-day Retention**\n",
-    "5. **Comparing 7-day Retention**\n",
-    "6. **Conclusion**"
+    "1. **[Project Background](#1)**\n",
+    "2. **[About the Data](#2)**\n",
+    "3. **[Analyzing Player Behavior ](#3)**\n",
+    "4. **[Comparing 1-day Retention](#4)**\n",
+    "5. **[Comparing 7-day Retention](#5)**\n",
+    "6. **[Conclusion](#6)**"
    ]
   },
   {
@@ -388,7 +388,9 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "# Counting the Number of Players for each number of gamerounds\n"
+    "# Counting the Number of Players for each number of gamerounds\n",
+    "\n",
+    "#算每一个number of gamerounds里面有多少个 player?\n"
    ]
   },
   {
@@ -538,6 +540,8 @@
     }
    ],
    "source": [
+    "#请问有关syntax, 这一行，和下一行，下一行加了 ['userid']是什么做用？\n",
+    "\n",
     "df.groupby('sum_gamerounds').count()"
    ]
   },
@@ -604,6 +608,7 @@
     }
    ],
    "source": [
+    "#好像换成 ['rentention_1']，显示的结果也是一样？\n",
     "df.groupby('sum_gamerounds')['retention_1'].count()\n"
    ]
   },
@@ -652,6 +657,26 @@
    },
    "outputs": [],
    "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "id": "d3f21c7e",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid character '）' (U+FF09) (3232133537.py, line 2)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  Input \u001b[0;32mIn [81]\u001b[0;36m\u001b[0m\n\u001b[0;31m    前两行话可以请画图 (有关 percentile）解释一下吗？\u001b[0m\n\u001b[0m                            ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid character '）' (U+FF09)\n"
+     ]
+    }
+   ],
+   "source": [
+    "#以下summary的\n",
+    "前两行话可以请画图 (有关 percentile）解释一下吗？"
+   ]
   },
   {
    "cell_type": "code",
@@ -709,8 +734,18 @@
   },
   {
    "cell_type": "code",
+   "execution_count": 83,
+   "id": "b858a24f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#请问以上提到 “14,000 players” 是哪里得来的呢？"
+   ]
+  },
+  {
+   "cell_type": "code",
    "execution_count": null,
-   "id": "0463134c",
+   "id": "b7e084f0",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -787,7 +822,9 @@
    "id": "404104bf",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "#请问下面一行里写的 T/F 是什么意思？"
+   ]
   },
   {
    "cell_type": "code",
@@ -903,7 +940,7 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "\n",
+    "#不太了解什么是 bootstrapping?\n",
     "\n",
     "#random sample with replacement"
    ]
@@ -914,6 +951,26 @@
    "metadata": {},
    "source": [
     "### *Bootstrapping: Should we be confident in the difference?*"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "id": "f508a877",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 上面已经得到了 A 和 B 的 retention rate, 为什么这里要做 bootstrap？不太了解"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "id": "78f41e11",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# ？以下麻烦解释一下这段具体的 syntax 的用法和意思，谢谢"
    ]
   },
   {
